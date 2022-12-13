@@ -1,24 +1,59 @@
-import logo from './logo.svg';
 import './App.css';
+import { Anchor, Col, Row } from 'antd';
+import About from './components/About';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import projectJson from './json/projectJson';
+import Projects from './components/Projects'
+const { Link } = Anchor;
 
-function App() {
+const App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <Row>
+            <Col span={3}>
+              <Anchor>
+                <div className='links'>
+                  <Link href="#about" title="About"/>
+                </div>
+                <div className='links'>
+                  <Link href="#experience" title="Experience" />
+                </div>
+                <div className='links'>
+                  <Link href="#projects" title="Projects"/>
+                </div>
+                <div className='links'>
+                  <Link href="#skills" title="Skills" />
+                </div>
+                <div className='links'>
+                  <Link href="#contact" title="Contact" />
+                </div>
+              </Anchor>
+            </Col>
+        <Col span ={21}>
+          <div id = 'about' className='About'>
+            <About/>
+           </div>
+    <div id = 'experience' className='Experience'>
+      <Experience/>
     </div>
+    <div id = 'projects'>
+    <Projects data = {projectJson}/>
+    </div>
+    <div id = 'skills'>
+      <Skills/>
+      </div>
+    <div id = 'contact'>
+      <Contact/>
+    </div>
+    
+    
+   
+    </Col>
+    </Row>
+    </>
+  
   );
 }
 
