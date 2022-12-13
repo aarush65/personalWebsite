@@ -5,13 +5,13 @@ function Contact() {
         <>
         <h4 className='variousContacts'>Contact Me</h4>
         <div className="variousContacts">
-            <a href = "https://github.com/aarush65" target="_blank">
+            <a href = "https://github.com/aarush65" target="_blank" rel="noreferrer">
                             <AiOutlineGithub color='black'/>
             </a>
-            <a href= "https://www.linkedin.com/in/aarush-agrawal-b0bb331b0/" target = "_blank">
+            <a href= "https://www.linkedin.com/in/aarush-agrawal-b0bb331b0/" target = "_blank" rel="noreferrer">
                 <AiFillLinkedin/>
             </a>
-            <a href = "mailto:aaagrawal@ucdavis.edu" target= "_blank"><AiOutlineMail color='black'/></a>
+            <a href = "mailto:aaagrawal@ucdavis.edu" target= "_blank"rel="noreferrer"><AiOutlineMail color='black'/></a>
         </div>
         <style>{`
         .variousContacts {

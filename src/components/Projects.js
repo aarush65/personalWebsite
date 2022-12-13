@@ -9,7 +9,7 @@ const Project=({data})=> {
                             {data.title}
                         </b>
                         <div className='modify'>
-                        <a href = {data.link} target="_blank">
+                        <a href = {data.link} target="_blank" rel="noreferrer">
                             <AiOutlineGithub/>
                         </a>
                         </div>
